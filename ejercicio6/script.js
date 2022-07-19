@@ -7,7 +7,9 @@
 
 function validarNumeroParImpar(numero) {
 
-    if (numero % 2 === 0) {
+    if (numero === 0) {
+        alert("El número no es par ni impar");
+    } else if (numero % 2 === 0) {
         alert("Su número es par");
     } else if (numero % 2 === 1) {
         alert("Su número es impar");
