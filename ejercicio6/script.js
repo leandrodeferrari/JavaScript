@@ -6,15 +6,17 @@
 */
 
 function validarNumeroParImpar(numero) {
-    
-    if (typeof numero === "number") {
-        (numero%2 === 0) ? alert("Su número es par") : alert("Su número es impar");
+
+    if (numero % 2 === 0) {
+        alert("Su número es par");
+    } else if (numero % 2 === 1) {
+        alert("Su número es impar");
     } else {
         alert("Lo siento, ha ingresado un número inválido");
     }
 
 }
 
-let numeroUsuario = parseInt(prompt("Ingrese su número:",0));
+let numeroUsuario = parseInt(prompt("Ingrese su número:", 0));
 
 validarNumeroParImpar(numeroUsuario);
